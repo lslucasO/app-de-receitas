@@ -7,4 +7,4 @@ def home(request):
         'name': 'Lucas Santana'
     }
     
-    return render(request, 'recipes/home.html', context)
+    return render(request, 'recipes/pages/home.html', context)
