@@ -8,3 +8,12 @@ def home(request):
     }
     
     return render(request, 'recipes/pages/home.html', context)
+
+
+def recipe(request):
+    
+    context = {
+        'name': 'Lucas Santana'
+    }
+    
+    return render(request, 'recipes/pages/home.html', context)
