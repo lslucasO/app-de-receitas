@@ -1,1 +1,1 @@
-# curso-django-projeto1
+# curso-django-project1
