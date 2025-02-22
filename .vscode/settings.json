@@ -63,5 +63,5 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "editor.wordWrap": "on",
-    "workbench.colorTheme": "Min Dark"
+    "workbench.colorTheme": "Theme"
   }
