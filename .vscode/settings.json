@@ -63,5 +63,5 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "editor.wordWrap": "on",
-    "workbench.colorTheme": "Theme"
+    "workbench.colorTheme": "Atom One Dark"
   }
