@@ -1,1 +1,1 @@
-# curso-django-project1
+# Curso de Django Web Framework e Django Rest Framework na Udemy
