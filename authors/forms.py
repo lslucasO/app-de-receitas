@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.models import User
-
+from django.forms import ValidationError
 
 def add_attr(field, attr_name, attr_new_val):
     existing = field.widget.attrs.get(attr_name, '')
@@ -75,3 +75,21 @@ class RegisterForm(forms.ModelForm):
                 'placeholder': 'Type your password here'
             })
         }
+        
+        def clean(self):
+            cleaned_data = super().clean()
+
+            password = cleaned_data.get('password')
+            password2 = cleaned_data.get('password2')
+
+            if password != password2:
+                password_confirmation_error = ValidationError(
+                    'Password and password2 must be equal',
+                    code='invalid'
+                )
+                raise ValidationError({
+                    'password': password_confirmation_error,
+                    'password2': [
+                        password_confirmation_error,
+                    ],
+                })
