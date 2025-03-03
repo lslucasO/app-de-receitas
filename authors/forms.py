@@ -104,7 +104,7 @@ class RegisterForm(forms.ModelForm):
             )
 
         return email
-    
+
     def clean(self):
         cleaned_data = super().clean()
 
