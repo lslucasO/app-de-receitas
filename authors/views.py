@@ -78,4 +78,4 @@ def logout_view(request):
         return redirect(reverse('authors:login'))
 
     logout(request)
-return redirect(reverse('authors:login'))
+    return redirect(reverse('authors:login'))
